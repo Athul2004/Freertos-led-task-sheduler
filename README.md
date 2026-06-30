@@ -28,5 +28,5 @@ This project relies on several core FreeRTOS APIs to achieve multitasking for th
 ## Hardware Configuration
 - **Microcontroller**: STM32F4 series (STM32F446RETx).
 - **LED Pins**: Configured as outputs on GPIO Port A (`Green_LED_Pin`, `Blue_LED_Pin`, `Red_LED_Pin`).
-- **UART**: USART2 configured on Port A (TX/RX) for serial terminal output at a very high frequency.
-- **Push Button**: Configured with a falling-edge interrupt on `B1_Pin`.
+- **Debug Console**: `printf` is retargeted to the SWV (Serial Wire Viewer) ITM Data Console for outputting task status messages.
+
